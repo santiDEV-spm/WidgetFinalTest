@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonLondon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Londres" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNewYork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New York"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonTokio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tokio"/>
+
+        </RadioGroup>
+
+        <TextClock
+            android:gravity="center"
+            android:id="@+id/textClock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:format12Hour="hh:mm:ss a"
+            android:textColor="#F1511B"
+            android:textStyle="bold"
+            android:text="7:10 PM"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Escribe aqui" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pulsame"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkboxTransparency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transparencia"/>
+
+        <CheckBox
+            android:id="@+id/checkboxTint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tintar"/>
+
+        <CheckBox
+            android:id="@+id/checkboxResize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="redimensionar"/>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Web"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
